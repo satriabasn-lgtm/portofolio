@@ -150,11 +150,56 @@
             line-height: 1.5;
         }
 
+        /* Certificate Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 25px;
+        }
+
+        .certificate-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .certificate-preview {
+            height: 110px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .certificate-body {
+            padding: 12px;
+            background-color: #ffffff;
+        }
+
+        .certificate-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+        }
+
+        .certificate-meta {
+            font-size: 0.7rem;
+            color: #a0aec0;
+        }
+
         footer {
             text-align: center;
             margin-top: 30px;
             font-size: 0.75rem;
             color: #a0aec0;
+        }
+
+        @media (max-width: 600px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -177,7 +222,7 @@
     <!-- Tentang Saya -->
     <div class="section-title">Tentang Saya</div>
     <p class="bio">
-        Lulusan Teknik Informatika yang berfokus pada pengembangan backend, integrasi API kecerdasan buatan, dan pemecahan masalah teknis. Memiliki pengalaman dalam pengelolaan deployment cloud hosting serta latar belakang analisis sistem yang teliti.
+       Lulusan Teknik Informatika yang berfokus pada pengembangan backend, integrasi API kecerdasan buatan, dan pemecahan masalah teknis. Memiliki pengalaman dalam pengelolaan deployment cloud hosting serta latar belakang analisis sistem yang teliti.
     </p>
 
     <!-- Keahlian Utama -->
@@ -211,10 +256,10 @@
     </div>
 
     <!-- Pendidikan -->
-    <div class="section-title" style="margin-top: 25px; margin-bottom: 14px;">Pendidikan</div>
+    <div class="section-title" style="margin-bottom: 14px;">Pendidikan</div>
     
     <div class="card">
-        <div class="card-title">STT Terpadu Nurul Fikri</div>
+        <div class="card-title">SMA Chartar Buana</div>
         <div class="card-meta">S1 Teknik Informatika</div>
     </div>
 
